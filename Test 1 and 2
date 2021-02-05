@@ -1,0 +1,117 @@
+Test:1 Frontend JS Test
+Question 1: What is an array? Write a program in JavaScript to print only the even numbers of the array. Do not use any library functions, need to do via for loops only
+
+Answer: JavaScript arrays are used to store multiple values in a single variable. An array is a special variable, which can hold more than one value at a time.
+
+<script>
+Function getEvenNumbers(){
+var arr= [1,2,3,4,5,6,7,8,9];
+for (var i=0; i<arr.lenght; i++) {
+if(arr[i]%2 ===0){
+doucument.writeln(arr[i] + “<br?>);
+}
+}
+}
+getEvenNumbers();
+</script>  
+
+Question 2: Find the maximum consecutive 1's in an array of 0's and 1's.
+Example:
+a) 00110001001110 - Output :3 [Max num of consecutive 1's is 3]
+b) 1000010001 - Output :1 [Max num of consecutive 1's is 1]
+
+
+
+Answer:
+
+Public static int maxOnes(int[] arr){
+int count = 0;
+int max = 0; I < arr.lenght; i++){
+if(arr[i] ==0;
+else
+count==;
+max = count > max? count : max;
+}
+return max;
+}
+Question 3: Suppose you have an array of 101 integers. This array is already sorted and all numbers in this array are consecutive. Each number only occurs once in the array except one number which occurs twice. Write a js code to find the repeated number.
+e.g $arr = array(0,1,2,3,4,5,6,7,7,8,9,10...................);
+
+Answer: We can do this in O(n). Iterate through the array and compute the sum of all numbers. Now, sum of natural numbers from 1 to N, can be expressed as Nx(N+1)/2. In our case N=101.
+Subtract the sum of the array from Nx(N+1)/2, where N=101.
+That is the missing number. The empty slot can be detected during the iteration in which the sum is computed.
+int sum = 0;
+int idx = -1;
+for (int i = 0; i < arr.length; i++)
+{
+if (arr[i] == 0)
+{
+    idx = i; 
+    }
+    else 
+    {
+    sum += arr[i];
+    }
+    }
+System.out.println("missing number is: " + (total - sum) + " at index " + idx);
+
+Question 5: Assume we have a form e.g
+<form>
+   <input type=”text” name=”firstname” />
+   <input type=”check” name=”checkme” />
+   <input type=”submit” value=”submit”
+</form>
+For the above form, write validation in javascript so that if the firstname is empty or if checkme is not checked, it will not allow the form to submit.
+Answer: 
+<script>
+valid = true
+If (document.checkme form.term.checked == false)
+{
+valid = false;
+}
+</script>
+
+Question 5: Support you have a html tag like this 
+<div>Javascript Developer</div>
+Write a small html code to add a class on this div. Add a rounded border box on this div and also there should be a gap of 5px between the text and the rounded box and the text. 
+
+Answer:
+<html>
+<head>
+<title> JavaScript Frontend Question</title>
+<style>
+.js{
+border radius: 5px;
+border: 2px;
+padding: 20px;
+width: 5px;
+height: 10px;
+</style>
+</head>
+<body>
+<div class=”js”>Javascript Developer<div>
+</body>
+</html>
+
+Question 6: Let’s see we an api url www.example.com/api/get/1 
+Write a sample code to call this url via ajax and print its response
+
+Answer: No idea about Ajax
+
+Question 7: Assume there is a json object of this format 
+var obj = {
+ “id” : 4, “name” : “abc”,
+ “id” : 10, “name” : “ab2”,
+ “id” : 5, “name” : “abc3”,
+ “id” : 6, “name” : “abc5”
+}
+Write a code to sort the object by id 
+
+Answer: No idea about json
+
+Test 2: Machine Coding
+
+
+
+
+
